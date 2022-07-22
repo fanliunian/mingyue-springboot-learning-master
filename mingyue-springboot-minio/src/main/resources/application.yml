@@ -1,0 +1,16 @@
+app:
+  author: Strive
+
+spring:
+  profiles:
+    active: mingyue
+
+minio:
+  endpoint: http://IP:9000
+  port: 9000
+  accessKey: 登录账号
+  secretKey: 登录密码
+  secure: false
+  bucket-name: mingyue-test # 桶名
+  image-size: 10485760 # 图片文件的最大大小
+  file-size: 1073741824 # 文件的最大大小

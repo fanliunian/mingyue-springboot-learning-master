@@ -1,0 +1,9 @@
+app:
+  author: Strive
+
+spring:
+  profiles:
+    active: mingyue
+
+elastic:
+  address: http://ip:9200

@@ -1,0 +1,12 @@
+# active 指定配置文件
+spring:
+  profiles:
+    active: prod
+
+app:
+  author: Strive
+
+mingyue:
+  id: 1
+  name: 明月
+  sex: 女

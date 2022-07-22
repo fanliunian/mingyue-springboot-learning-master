@@ -1,0 +1,15 @@
+app:
+  author: Strive
+
+spring:
+  profiles:
+    active: mingyue
+  mail:
+    # QQ邮箱服务器
+    host: smtp.qq.com
+    # QQ邮箱账户
+    username: xxx@qq.com
+    # QQ邮箱第三方授权码
+    password: xxxxxxxxxxxxxxxx
+    # 编码类型
+    default-encoding: UTF-8

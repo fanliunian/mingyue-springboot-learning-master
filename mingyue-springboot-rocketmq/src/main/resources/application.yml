@@ -1,0 +1,11 @@
+app:
+  author: Strive
+
+spring:
+  profiles:
+    active: mingyue
+
+rocketmq:
+  nameServer: 127.0.0.1:9876
+  producer:
+    group: mingyue-springboot

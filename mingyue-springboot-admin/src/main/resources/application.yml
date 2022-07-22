@@ -1,0 +1,5 @@
+app:
+  author: Strive
+
+server:
+  port: 9000

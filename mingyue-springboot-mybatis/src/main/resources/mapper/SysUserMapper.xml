@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csp.mingyue.mybatis.mapper.SysUserMapper">
+  <!-- 通用查询映射结果 -->
+  <resultMap id="baseResultMap" type="com.csp.mingyue.mybatis.model.MingYueUser">
+    <id column="user_id" property="userId"/>
+    <result column="username" property="username"/>
+  </resultMap>
+
+  <select id="queryUserById" resultMap="baseResultMap">
+    select *
+    from sys_user
+    where user_id = #{userId}
+  </select>
+</mapper>

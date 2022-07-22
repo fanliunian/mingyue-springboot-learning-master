@@ -1,0 +1,8 @@
+app:
+  author: Strive
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:9000

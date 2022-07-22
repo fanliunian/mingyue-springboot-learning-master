@@ -1,0 +1,6 @@
+app:
+  author: Strive
+
+spring:
+  application:
+    name: mingyue

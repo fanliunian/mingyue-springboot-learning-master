@@ -1,0 +1,186 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "mingyue-springboot-learning",
+        "description": "",
+        "version": "1.0.0"
+    },
+    "tags": [
+        {
+            "name": "mingyue-springboot-api"
+        }
+    ],
+    "paths": {
+        "/user/{userId}": {
+            "get": {
+                "summary": "根据用户ID获取用户信息",
+                "x-apifox-folder": "mingyue-springboot-api",
+                "x-apifox-status": "developing",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "mingyue-springboot-api"
+                ],
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "example": "1",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {}
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "根据用户ID删除用户",
+                "x-apifox-folder": "mingyue-springboot-api",
+                "x-apifox-status": "developing",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "mingyue-springboot-api"
+                ],
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "",
+                        "required": true,
+                        "example": "1",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {}
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/user": {
+            "put": {
+                "summary": "更新用户",
+                "x-apifox-folder": "mingyue-springboot-api",
+                "x-apifox-status": "developing",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "mingyue-springboot-api"
+                ],
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "",
+                        "required": false,
+                        "example": "{{'application/json'}}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "text/plain": {
+                            "schema": {
+                                "type": "string"
+                            },
+                            "example": "{\"userId\":2,\"username\":\"Strive Update\"}"
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {}
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "添加用户",
+                "x-apifox-folder": "mingyue-springboot-api",
+                "x-apifox-status": "developing",
+                "deprecated": false,
+                "description": "",
+                "tags": [
+                    "mingyue-springboot-api"
+                ],
+                "parameters": [
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "",
+                        "required": false,
+                        "example": "{{'application/json'}}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "text/plain": {
+                            "schema": {
+                                "type": "string"
+                            },
+                            "example": "{\"userId\":2,\"username\":\"Strive\"}"
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {}
+                                },
+                                "examples": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {}
+    }
+}
